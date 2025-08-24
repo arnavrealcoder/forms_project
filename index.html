@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Details Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <nav>
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#form">Form</a> |
+      <a href="#gallery">Gallery</a> |
+      <a href="#faq">FAQ</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About This Website</h2>
+      <p>This is a fully functional website created only with HTML. It includes a personal details form, gallery, FAQ, and contact details. No CSS or JavaScript was used — just the power of pure HTML.</p>
+    </section>
+
+    <section id="form">
+      <h2>Personal Details Form</h2>
+      <form>
+        <fieldset>
+          <legend>Basic Information</legend>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+          <label for="contact">Contact Number:</label><br>
+          <input type="tel" id="contact" name="contact" placeholder="1234567890" pattern="[0-9]{10}" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal Details</legend>
+          <p>Gender:</p>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label><br><br>
+
+          <p>Favorite Cities (choose all that apply):</p>
+          <input type="checkbox" id="newyork" name="city" value="New York">
+          <label for="newyork">New York</label>
+
+          <input type="checkbox" id="london" name="city" value="London">
+          <label for="london">London</label>
+
+          <input type="checkbox" id="paris" name="city" value="Paris">
+          <label for="paris">Paris</label>
+
+          <input type="checkbox" id="tokyo" name="city" value="Tokyo">
+          <label for="tokyo">Tokyo</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Information</legend>
+          <label for="comments">Tell us about yourself:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write something..."></textarea>
+        </fieldset>
+
+        <br>
+        <input type="reset" value="Clear Form">
+        <input type="submit" value="Submit Form">
+      </form>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Here are some of the cities you might love:</p>
+      <ul>
+        <li>🏙️ New York</li>
+        <li>🌉 London</li>
+        <li>🗼 Paris</li>
+        <li>🗻 Tokyo</li>
+      </ul>
+      <h3>City Information Table</h3>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+          <th>City</th>
+          <th>Country</th>
+          <th>Famous For</th>
+        </tr>
+        <tr>
+          <td>New York</td>
+          <td>USA</td>
+          <td>Statue of Liberty</td>
+        </tr>
+        <tr>
+          <td>London</td>
+          <td>UK</td>
+          <td>Big Ben</td>
+        </tr>
+        <tr>
+          <td>Paris</td>
+          <td>France</td>
+          <td>Eiffel Tower</td>
+        </tr>
+        <tr>
+          <td>Tokyo</td>
+          <td>Japan</td>
+          <td>Mount Fuji</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is this website for?</summary>
+        <p>This website is for practicing and showcasing the capabilities of pure HTML to create a structured website.</p>
+      </details>
+      <details>
+        <summary>Can I submit my form here?</summary>
+        <p>Yes, you can fill in and submit your form, but since this is pure HTML, no backend is connected to store the data.</p>
+      </details>
+      <details>
+        <summary>Why is there no CSS or JavaScript?</summary>
+        <p>This project demonstrates what can be built using only HTML without extra technologies.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>You can reach us at:</p>
+      <address>
+        Email: contact@example.com<br>
+        Phone: +1 234 567 890<br>
+        Address: 123 Main Street, Example City
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Simple HTML Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
